@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: setupblog
 title: 搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门
 ---
-
 <article class="hentry">
     <h1 id="page-title" class="asset-name entry-title">搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门</h1>
     <div id="share_button" style="float:right;padding-right:2em;padding-top:1em;"></div>
@@ -260,11 +259,11 @@ title: 搭建一个免费的，无限流量的Blog----github Pages和Jekyll入�
 
             <p>　　&lt;ul&gt;</p>
 
-            <p>　　　　{% for post in site.posts %}  </p>
+            <p>　　　　&lt;{% for post in site.posts %}&gt;  </p>
 
             <p>　　　　　　&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</p>
 
-            <p>　　　　{% endfor %}</p>
+            <p>　　　　&lt;{% endfor %}&gt;  </p>
 
             <p>　　&lt;/ul&gt;</p>
 
