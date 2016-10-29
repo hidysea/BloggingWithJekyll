@@ -3,32 +3,30 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>搭建一个免费的，无限流量的Blog ---- github Pages和Jekyll入门</title>
+
+    <!--remote path 不可用-->
+    <!--<link rel="stylesheet" href="http://www.ruanyifeng.com/blog/styles.css" type="text/css" />-->
+    <link rel="stylesheet" href="/jekyll_demo/css/style.css" type="text/css" />
+    <!--/jekyll_demo 相对路径-->
+    <!--<script type="text/javascript" src="http://www.ruanyifeng.com/blog/mt.js"></script>-->
+    <script type="text/javascript" src="/jekyll_demo/js/mt.js"></script>
+
+    <script type="text/javascript" src="/jekyll_demo/js/newwindow.js"></script>
+    <script>
+        if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent)) document.body.classList.add('mobile');
+
+        window.addEventListener('load', function(event) {
+            setTimeout(function () {
+                hab('#sup-post-2');
+                hab('#gd1-inner');
+            }, 1000);
+        });
+    </script>
+
 </head>
-<body>
+<body id="scrapbook" class="mt-entry-archive one-column">
 
-　　<body id="scrapbook" class="mt-entry-archive one-column">
-
-<!--remote path 不可用-->
-<!--<link rel="stylesheet" href="http://www.ruanyifeng.com/blog/styles.css" type="text/css" />-->
-<link rel="stylesheet" href="/jekyll_demo/css/style.css" type="text/css" />
-
-<!--<script type="text/javascript" src="http://www.ruanyifeng.com/blog/mt.js"></script>-->
-<script type="text/javascript" src="/jekyll_demo/js/mt.js"></script>
-
-<script type="text/javascript" src="/jekyll_demo/js/newwindow.js"></script>
-
-<script>
-    if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent)) document.body.classList.add('mobile');
-
-    window.addEventListener('load', function(event) {
-        setTimeout(function () {
-            hab('#sup-post-2');
-            hab('#gd1-inner');
-        }, 1000);
-    });
-</script>
-
-<div id="container">
+        <div id="container">
     <div id="container-inner">
 
         <div id="content">
@@ -44,7 +42,7 @@
     <div id="share_button" style="float:right;padding-right:2em;padding-top:1em;"></div>
     <div class="asset-meta">
 
-        <p class="vcard author">作者： <a class="fn url" href="http://www.ruanyifeng.com">阮一峰</a></p>
+        <p class="vcard author">原作： <a class="fn url" href="http://www.ruanyifeng.com">阮一峰</a></p>
         <p>日期： <a href="http://www.ruanyifeng.com/blog/2012/08/"><abbr class="published" title="2012-08-25T18:32:38+08:00">2012年8月25日</abbr></a></p>
 
     </div>
@@ -211,6 +209,7 @@
                 　　　　<h2>你好，世界</h2>
 <p>我的第一篇文章</p>
 <p>28 Aug 2015</p>
+
 <br />
                 <br />
                 　　&lt;/body&gt;</p>
@@ -222,6 +221,7 @@
         <p>Jekyll使用<a href="https://github.com/shopify/liquid/wiki/liquid-for-designers">Liquid模板语言</a>，搭建一个免费的，无限流量的Blog ---- github Pages和Jekyll入门表示文章标题，<h2>你好，世界</h2>
 <p>我的第一篇文章</p>
 <p>28 Aug 2015</p>
+
 表示文章内容，更多模板变量请参考<a href="https://github.com/mojombo/jekyll/wiki/Template-Data">官方文档</a>。</p>
 
         <p>目录结构变成：</p>
@@ -393,9 +393,7 @@
         </div>
     </div>
 </div>
-</body>
 
 
 </body>
 </html>
-
