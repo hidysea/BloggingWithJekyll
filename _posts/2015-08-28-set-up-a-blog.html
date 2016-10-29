@@ -268,17 +268,17 @@ title: 搭建一个免费的，无限流量的Blog ---- github Pages和Jekyll入
 
             <p>　　&lt;ul&gt;</p>
 
-            <!--<p>　　　　{% for post in site.posts %}  </p>-->
+            <p>　　　　{% for post in site.posts %}  </p>
 
             <p>　　　　　　&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</p>
 
-            <!--<p>　　　　{% endfor %}  </p>-->
+            <p>　　　　{% endfor %}</p>
 
             <p>　　&lt;/ul&gt;</p>
 
         </blockquote>
 
-        <p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了 for post in site.posts ，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
+        <p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了{% for post in site.posts %}，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
 
         <p>目录结构变成：</p>
 
