@@ -12,21 +12,21 @@
     <script type="text/javascript" src="/jekyll_demo/js/mt.js"></script>
 
     <script type="text/javascript" src="/jekyll_demo/js/newwindow.js"></script>
-    <script>
-        if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent)) document.body.classList.add('mobile');
-
-        window.addEventListener('load', function(event) {
-            setTimeout(function () {
-                hab('#sup-post-2');
-                hab('#gd1-inner');
-            }, 1000);
-        });
-    </script>
 
 </head>
 <body id="scrapbook" class="mt-entry-archive one-column">
 
-        <div id="container">
+        <script>
+    if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent)) document.body.classList.add('mobile');
+
+    window.addEventListener('load', function(event) {
+        setTimeout(function () {
+            hab('#sup-post-2');
+            hab('#gd1-inner');
+        }, 1000);
+    });
+</script>
+<div id="container">
     <div id="container-inner">
 
         <div id="content">
@@ -300,21 +300,21 @@
 
             <p>　　&lt;ul&gt;</p>
 
-            <!--<p>　　　　  </p>-->
+            <p>　　　　  </p>
 
             <p>　　　　　　&lt;li&gt;28 Aug 2015 &lt;a href="/jekyll_demo/2015/08/28/set-up-a-blog.html"&gt;搭建一个免费的，无限流量的Blog ---- github Pages和Jekyll入门&lt;/a&gt;&lt;/li&gt;</p>
 
-            <!--<p>　　　　  </p>-->
+            <p>　　　　  </p>
 
             <p>　　　　　　&lt;li&gt;28 Aug 2015 &lt;a href="/jekyll_demo/2015/08/28/hello-world.html"&gt;你好，世界&lt;/a&gt;&lt;/li&gt;</p>
 
-            <!--<p>　　　　  </p>-->
+            <p>　　　　</p>
 
             <p>　　&lt;/ul&gt;</p>
 
         </blockquote>
 
-        <p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了 for post in site.posts ，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于/jekyll_demo就是_config.yml中设置的baseurl变量。</p>
+        <p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了 for post in site.posts ，表示对所有帖子进行一个遍历，使用 endfor ，结束遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于/jekyll_demo就是_config.yml中设置的baseurl变量。</p>
 
         <p>目录结构变成：</p>
 
