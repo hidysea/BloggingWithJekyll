@@ -1,2 +1,3 @@
 # jekyll_demo
-jekyll_demo : use jekyll to start a blog
+blogging with jekyll
+每个人都应该有一个Jekyll博客
