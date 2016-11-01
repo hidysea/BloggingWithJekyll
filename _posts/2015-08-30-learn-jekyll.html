@@ -1,7 +1,7 @@
 ---
 layout: article
-permalink: /know-jekyll
-title: 每个人都应该有一个Jekyll博客 --- 认识Jekyll
+permalink: /learnjekyll
+title: 每个人都应该有一个Jekyll博客 --- Jekyll详解
 ---
 <div id="container">
     <div id="container-inner">
@@ -20,17 +20,34 @@ title: 每个人都应该有一个Jekyll博客 --- 认识Jekyll
                                 <div class="asset-meta">
 
                                     <p>作者： <a class="fn url" href="https://hidysea.github.io/jekyll_demo/">hidysea</a></p>
-                                    <p>日期： <abbr class="published" title="2012-08-25T18:32:38+08:00">2012年8月25日</abbr></p>
-                                    <p>来源： <a href="http://jekyllrb.com/docs/home/">Jekyll</a> 、 <a href="http://jekyllcn.com/docs/home/">Jekyll中文文档</a> 以及 <a href="http://docs.shopify.com/themes/liquid-basics">Liquid文档</a></p>
+                                    <p>日期： <abbr class="published" title="2015-08-30T18:32:38+08:00">2015年8月30日</abbr></p>
+                                    <p>来源： <a href="http://jekyllrb.com/docs/home/">Jekyll文档</a> 、 <a href="http://jekyllcn.com/docs/home/">Jekyll中文文档</a> 以及 <a href="http://docs.shopify.com/themes/liquid-basics">Liquid文档</a></p>
 
                                 </div>
                                 <div class="asset-content entry-content" id="main-content">
 
                                     <p><strong>Jekyll 究竟是什么？</strong></p>
+                                    <p>官方解释如下：</p>
                                     <blockquote>
-                                        <p>Jekyll 是一个简单的博客形态的静态站点生产机器。</p>
-                                        <p>它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>）和我们的 <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 <a href="http://pages.github.com/">GitHub Page</a> 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是<strong>完全免费</strong>的。</p>
+                                        <p><strong>Transform your plain text into static websites and blogs.</strong></p>
+                                        <p>将纯文本转换为静态博客网站</p>
+                                        <p><strong>Simple Static Blog-aware</strong></p>
+                                        <p>简单 静态 博客支持</p>
                                     </blockquote>
+
+                                    <p>Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>）和我们的 <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 <a href="http://pages.github.com/">GitHub Page</a> 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是<strong>完全免费</strong>的。</p>
+
+                                    <p><strong>Jekyll 快速指南</strong></p>
+                                    <p>以下是一个获取最简单 Jekyll 模板并生成静态页面并运行的例子。</p>
+                                    <blockquote>
+                                        <p>~ <span class="nv">$ </span>gem install jekyll</p>
+                                        <p>~ <span class="nv">$ </span>jekyll new myblog</p>
+                                        <p>~ <span class="nv">$ </span><span class="nb">cd </span>myblog</p>
+                                        <p>~/myblog <span class="nv">$ </span>jekyll serve</p>
+                                        <p><span class="c"># =&gt; Now browse to http://localhost:4000</span></p>
+                                    </blockquote>
+                                    <p>如果你希望把 jekyll 安装到当前目录，你可以运行 <code class="highlighter-rouge">jekyll new .</code> 来代替。如果当前目录非空，你还需要增添 <code class="highlighter-rouge">--force</code> 参数，所以命令应为 <code class="highlighter-rouge">jekyll new . --force</code>。</p>
+                                    <p>就是这么简单。从现在开始，你可以通过创建文章、改变头信息来控制模板和输出、修改 Jekyll 设置来使你的站点变得更有趣～</p>
 
                                     <p id="#install"><strong>Jekyll 安装</strong></p>
                                     <p>安装 Jekyll 相当简单，但是你得先做好一些准备工作。开始前你需要确保你在系统里已经有如下配置。</p>
@@ -54,7 +71,7 @@ title: 每个人都应该有一个Jekyll博客 --- 认识Jekyll
                                         <p>gem install jekyll</p>
                                     </blockquote>
                                     <p>所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心。如果你在安装中碰到了问题，请<a href="https://github.com/jekyll/jekyll/issues/new">report an issue</a> 那么 Jekyll 社区就会帮助你解决问题了。</p>
-                                    <p>安装 Xcode Command-Line Tools：</p>
+                                    <p>注意，安装 Xcode Command-Line Tools：</p>
                                     <blockquote>
                                         <p>
                                             如果你是Mac用户，你就需要安装 Xcode 和 Command-Line Tools了。下载方式：
