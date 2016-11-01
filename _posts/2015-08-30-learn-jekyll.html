@@ -3,6 +3,17 @@ layout: article
 permalink: /learn_jekyll
 title: 每个人都应该有一个Jekyll博客 --- Jekyll详解
 ---
+<script>
+    if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent)) document.body.classList.add('mobile');
+
+    window.addEventListener('load', function(event) {
+        setTimeout(function () {
+            hab('#sup-post-2');
+            hab('#gd1-inner');
+        }, 1000);
+    });
+</script>
+
 <div id="container">
     <div id="container-inner">
 
@@ -29,10 +40,10 @@ title: 每个人都应该有一个Jekyll博客 --- Jekyll详解
                                     <p><strong>Jekyll 究竟是什么？</strong></p>
                                     <p>官方解释如下：</p>
                                     <blockquote>
+                                        <p><strong>Jekyll is a simple, blog-aware, static site generator in Ruby.</strong></p>
+                                        <p>Jekyll 是一个简单的博客形态的静态站点生产机器。</p>
                                         <p><strong>Transform your plain text into static websites and blogs.</strong></p>
-                                        <p>将纯文本转换为静态博客网站</p>
-                                        <p><strong>Simple Static Blog-aware</strong></p>
-                                        <p>简单 静态 博客支持</p>
+                                        <p>将纯文本转换为静态博客网站。</p>
                                     </blockquote>
 
                                     <p>Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>）和我们的 <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 <a href="http://pages.github.com/">GitHub Page</a> 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是<strong>完全免费</strong>的。</p>
@@ -71,7 +82,7 @@ title: 每个人都应该有一个Jekyll博客 --- Jekyll详解
                                         <p>gem install jekyll</p>
                                     </blockquote>
                                     <p>所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心。如果你在安装中碰到了问题，请<a href="https://github.com/jekyll/jekyll/issues/new">report an issue</a> 那么 Jekyll 社区就会帮助你解决问题了。</p>
-                                    <p>注意，安装 Xcode Command-Line Tools：</p>
+                                    <p>注意：</p>
                                     <blockquote>
                                         <p>
                                             如果你是Mac用户，你就需要安装 Xcode 和 Command-Line Tools了。下载方式：
