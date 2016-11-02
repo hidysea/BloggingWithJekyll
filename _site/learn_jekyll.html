@@ -95,27 +95,46 @@
                                         <p>gem install jekyll</p>
                                     </blockquote>
                                     <p>所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心。如果你在安装中碰到了问题，请<a href="https://github.com/jekyll/jekyll/issues/new">report an issue</a> 那么 Jekyll 社区就会帮助你解决问题了。</p>
-                                    <p>注意：</p>
-                                    <blockquote>
+                                    <!--<p>注意：</p>-->
+                                    <!--<blockquote>-->
+                                        <!--<p>-->
+                                            <!--如果你是Mac用户，你就需要安装 Xcode 和 Command-Line Tools了。下载方式：-->
+                                            <!--<code>Preferences → Downloads → Components</code>。-->
+                                        <!--</p>-->
+                                    <!--</blockquote>-->
+                                    <div class="note info">
+                                        <h5>安装 Xcode Command-Line Tools</h5>
                                         <p>
                                             如果你是Mac用户，你就需要安装 Xcode 和 Command-Line Tools了。下载方式：
                                             <code>Preferences → Downloads → Components</code>。
                                         </p>
-                                    </blockquote>
+                                    </div>
 
                                     <p><strong>Jekyll 基本用法</strong></p>
                                     <p>安装了 Jekyll 的 Gem 包之后，就可以在命令行中使用 Jekyll 命令了。有以下这些用法：</p>
-                                    <blockquote>
-                                        <p><span class="gp">$ </span>jekyll build</p>
-                                        <p><span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。</span></p>
-                                        <p><span class="gp">$ </span>jekyll build --destination &lt;destination&gt;</p>
-                                        <p><span class="c"># =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。</span></p>
-                                        <p><span class="gp">$ </span>jekyll build --source &lt;<span class="nb">source</span>&gt; --destination &lt;destination&gt;</p>
-                                        <p><span class="c"># =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。</span></p>
-                                        <p><span class="gp">$ </span>jekyll build --watch</p>
-                                        <p><span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，</span></p>
-                                        <p><span class="c">#    查看改变，并且自动再生成。</span></p>
-                                    </blockquote>
+                                    <!--<blockquote>-->
+                                        <!--<p><span class="gp">$ </span>jekyll build</p>-->
+                                        <!--<p><span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。</span></p>-->
+                                        <!--<p><span class="gp">$ </span>jekyll build &#45;&#45;destination &lt;destination&gt;</p>-->
+                                        <!--<p><span class="c"># =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。</span></p>-->
+                                        <!--<p><span class="gp">$ </span>jekyll build &#45;&#45;source &lt;<span class="nb">source</span>&gt; &#45;&#45;destination &lt;destination&gt;</p>-->
+                                        <!--<p><span class="c"># =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。</span></p>-->
+                                        <!--<p><span class="gp">$ </span>jekyll build &#45;&#45;watch</p>-->
+                                        <!--<p><span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，</span></p>-->
+                                        <!--<p><span class="c">#    查看改变，并且自动再生成。</span></p>-->
+                                    <!--</blockquote>-->
+                                    <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>jekyll build
+<span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。</span>
+
+<span class="gp">$ </span>jekyll build --destination &lt;destination&gt;
+<span class="c"># =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。</span>
+
+<span class="gp">$ </span>jekyll build --source &lt;<span class="nb">source</span>&gt; --destination &lt;destination&gt;
+<span class="c"># =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。</span>
+
+<span class="gp">$ </span>jekyll build --watch
+<span class="c"># =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，</span>
+<span class="c">#    查看改变，并且自动再生成。</span></code></pre></figure>
                                     <div class="note info">
                                         <p>在自动构建过程中对 _config.yml 的修改将不会被包含其中。</p>
                                         <p>
