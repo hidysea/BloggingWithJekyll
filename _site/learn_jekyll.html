@@ -63,37 +63,31 @@
 
                                     <p><strong>Jekyll 快速指南</strong></p>
                                     <p>以下是一个获取最简单 Jekyll 模板并生成静态页面并运行的例子。</p>
-                                    <blockquote>
-                                        <p>~ <span class="nv">$ </span>gem install jekyll</p>
-                                        <p>~ <span class="nv">$ </span>jekyll new myblog</p>
-                                        <p>~ <span class="nv">$ </span><span class="nb">cd </span>myblog</p>
-                                        <p>~/myblog <span class="nv">$ </span>jekyll serve</p>
-                                        <p><span class="c"># =&gt; Now browse to http://localhost:4000</span></p>
-                                    </blockquote>
+                                    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">~ <span class="nv">$ </span>gem install jekyll
+~ <span class="nv">$ </span>jekyll new myblog
+~ <span class="nv">$ </span><span class="nb">cd </span>myblog
+~/myblog <span class="nv">$ </span>jekyll serve
+<span class="c"># =&gt; Now browse to http://localhost:4000</span></code></pre></figure>
                                     <p>如果你希望把 jekyll 安装到当前目录，你可以运行 <code class="highlighter-rouge">jekyll new .</code> 来代替。如果当前目录非空，你还需要增添 <code class="highlighter-rouge">--force</code> 参数，所以命令应为 <code class="highlighter-rouge">jekyll new . --force</code>。</p>
                                     <p>就是这么简单。从现在开始，你可以通过创建文章、改变头信息来控制模板和输出、修改 Jekyll 设置来使你的站点变得更有趣～</p>
 
                                     <p id="install"><strong>Jekyll 安装</strong></p>
                                     <p>安装 Jekyll 相当简单，但是你得先做好一些准备工作。开始前你需要确保你在系统里已经有如下配置。</p>
-                                    <blockquote>
-                                        <ul>
+                                    <ul>
                                         <li>
                                             <a href="http://www.ruby-lang.org/en/downloads/">Ruby</a>（including development headers, Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）</li>
                                         <li><a href="http://rubygems.org/pages/download">RubyGems</a></li>
-                                        <li>Linux, Unix, or Mac OS X (or macOS)</li>
+                                        <li>Linux, Un ix, or Mac OS X</li>
                                         <li>
                                             <a href="http://nodejs.org">NodeJS</a>, 或其他 JavaScript 运行环境（Jekyll 2 或更早版本需要 CoffeeScript 支持）。</li>
                                         <li>
                                             <a href="https://www.python.org/downloads/">Python 2.7</a>（Jekyll 2 或更早版本）</li>
                                     </ul>
-                                    </blockquote>
 
                                     <p><strong>用 RubyGems 安装 Jekyll</strong></p>
                                     <p>安装 Jekyll 的最好方式就是使用
                                         <a href="http://rubygems.org/pages/download">RubyGems</a>. 你只需要打开终端输入以下命令就可以安装了：</p>
-                                    <blockquote>
-                                        <p>gem install jekyll</p>
-                                    </blockquote>
+                                    <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>gem install jekyll</code></pre></figure>
                                     <p>所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心。如果你在安装中碰到了问题，请<a href="https://github.com/jekyll/jekyll/issues/new">report an issue</a> 那么 Jekyll 社区就会帮助你解决问题了。</p>
                                     <!--<p>注意：</p>-->
                                     <!--<blockquote>-->
