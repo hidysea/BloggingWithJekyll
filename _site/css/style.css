@@ -16,18 +16,18 @@ a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:h
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
-/*article {*/
+article {
     /*background-color: #444;*/
-    /*-webkit-border-radius: 10px;*/
-    /*-moz-border-radius: 10px;*/
-    /*border-radius: 10px;*/
-    /*padding: 20px;*/
-    /*margin: 0 10px;*/
-    /*-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);*/
-    /*-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);*/
-    /*box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     /*font-size: 16px*/
-/*}*/
+}
 
 pre, code {
     white-space: pre;
