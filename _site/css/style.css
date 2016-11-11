@@ -44,7 +44,9 @@ pre, code {
 }
 
 .highlight, p > pre, p > code, p > nobr > code, li > code, li > pre, h5 > code, .note > code {
-    background-color: #2b2b2b;
+    /*background-color: #2b2b2b;*/
+    /*修改一下背景颜色*/
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     max-width: 100%;
     overflow-x: auto;
