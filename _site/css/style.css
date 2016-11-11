@@ -179,7 +179,8 @@ code.option, code.flag, code.filter, code.output {
 
 @media (min-width: 768px) {
     .note {
-        margin-left: -50px
+        /*暂时注释: 实际效果太偏左*/
+        /*margin-left: -50px*/
     }
 }
 
